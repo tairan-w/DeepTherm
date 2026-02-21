@@ -3,7 +3,7 @@ This is the repository for the paper "DeepTherm: A Unified Deep Learning Approac
 
 DeepTherm is a deep learning framework designed to predict thermochemical properties, such as enthalpy of formation, entropy, and heat capacity for diverse molecular species. The project integrates directed message-passing networks and global attention mechanisms to capture both local and long-range dependencies in molecular graphs.
 
-The datasets are provided along with the paper.
+All the Supplementary data of the paper are provided in the Supplementary data.zip.
 
 The code was built based on [DMPNN](https://github.com/chemprop/chemprop). Thanks a lot for their code sharing!
 
