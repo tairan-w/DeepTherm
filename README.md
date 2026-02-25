@@ -30,8 +30,6 @@ This directory contains the code for model definitions.
 ### train
 This directory contains the code for model training, evaluation, and cross-validation.
 
-
-## Data Analysis
 Place the SMILES data files in the data/ directory.
 
 Ensure data follows the format:
@@ -40,31 +38,13 @@ Ensure data follows the format:
 
 `COO,-30.08,67.3,14.34,16.8,19.09,21.07,24.19,26.52,30.25`
 
-Run scripts:
-`python data/scaffold.py --input <data_path> --output data/processed_data.csv`
-
-## Feature Extraction
-Extract initial features using the following command:
-
-`python features/featurization.py --input <data_path> --output data/features.csv`
-
 Initial features include:
 
 Atom type, formal charge, hybridization, aromaticity, and more.
 
 Bond type, conjugation, in-ring status, and additional bond features.
 
-Generate molecular descriptors using the following command:
-
-`python features/features_generators.py --input data/<data_path> --output data/features.csv`
-
-
 ## Training
-To train a model, run:
-
-`python train.py --data_path <path> --dataset_type <type> --num_folds <number_of_k-fold_cross_validation> --gpu <GPU_number> --epochs <epoch_number>`
-
-where <path> is the path to a CSV file containing a dataset, <type> is either "classification" or "regression" depending on the type of the dataset.
 
 Key hyperparameters include:
 
@@ -93,14 +73,6 @@ Attention Heads
 Early Stopping Patience
 
 Activation Function
-
-
-## Predicting
-
-`python predict.py --data_path <path> --checkpoint_dir <dir>`
-
-where `<dir>` is the directory where the model checkpoint(s) are saved, and <path> is the path of SMILES dataset
-
 
 
 ### Acknowledgement 
